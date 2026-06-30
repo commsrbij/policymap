@@ -201,6 +201,10 @@
     .view-btn { padding:7px 14px; font-size:0.78rem; }
     .view-btn-federal { padding:7px 10px; font-size:0.78rem; }
     .view-toggle-divider { display:none; }
+    #btnState { font-size:0; }
+    #btnState::after { content:'State view'; font-size:0.78rem; font-family:'Poppins',sans-serif; font-weight:600; }
+    #btnIssue { font-size:0; }
+    #btnIssue::after { content:'Issue view'; font-size:0.78rem; font-family:'Poppins',sans-serif; font-weight:600; }
     /* Legend: pull out of absolute, show inline below map */
     .map-wrap { position:static; }
     .map-legend { position:static; background:none; padding:6px 0 0; flex-direction:row; gap:16px; justify-content:flex-end; margin:0 20px; }
@@ -302,8 +306,8 @@
 <div class="controls">
   <div style="display:flex;align-items:center;">
     <div class="view-toggle">
-      <button class="view-btn" id="btnState">State view</button>
-      <button class="view-btn active" id="btnIssue">Issue view</button>
+      <button class="view-btn" id="btnState">View by state</button>
+      <button class="view-btn active" id="btnIssue">View by issue</button>
     </div>
     <div class="view-toggle-divider"></div>
     <button class="view-btn-federal" id="btnFederal">
